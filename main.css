@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Salsa&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: wheat;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-family: 'salsa',sans-serif;
+    backdrop-filter: brightness(0.9) blur(9px);
+    position: fixed;
+    top: 0;
+    left: 0;
+  z-index: 9999999;
+  }
+ 
+  .logo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .logo img{
+    width: 5%;
+    animation: change 5s ease-in-out infinite ;
+  }
+  @keyframes change{
+    0%{
+      transform: rotate(30deg);
+    }
+    20%{
+      transform: rotate(-30deg);
+    }
+    40%{
+      transform: rotate(30deg);
+    }
+    60%{
+      transform: rotate(-30deg);
+    }
+    80%{
+      transform: rotate(30deg);
+    }
+    100%{
+      transform: rotate(-30deg);
+    }
+    0%{
+      transform: rotate(30deg);
+    }
+  }
+  .components {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    cursor: pointer;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    color: blue;
+    font-size: larger;
+  }
+  #signIn {
+    outline: 0;
+    border: 0;
+    padding: 15px;
+    background-color: rgb(105, 204, 244);
+    font-size: large;
+    border-radius: 5px;
+    
+    
+}
+.heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 130px 30px 50px 30px;
+  }
+#change{
+    outline: 0;
+    border: 0;
+    padding: 10px;
+    background-color: rgb(244, 105, 133);
+    font-size: large;
+    border-radius: 5px;
+}
+.diaryContainer{
+    display: none;
+}
